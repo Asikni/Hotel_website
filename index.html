@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+        
+    </head>
+    <body>
+        <div class="container">   <!--overall container --followed by a header then a div which is content which
+        by itself contains sidebar and main body-->
+            <header class="header">
+                <img class = "logo" src="./img/logo-designing-kerala.png" alt="logo">
+
+                <form action = "#" class = "search">   <!--why use form here??-->
+                    <input type = "text" class = "search__input" placeholder="Search hotels">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href = "img/sprite.svg#icon-search"></use>
+                        </svg>
+
+                    </button>
+                </form>
+                <nav class="user-nav">    <!--why nav bar here-->
+                    <div class="user-nav__nav_icon">
+                        <svg class="user-nav_icon">
+                            <use xlink:href = "img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class = "user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav_icon">
+                            <use xlink:href = "img/sprite.svg#icon-bubbles2"></use>
+                        </svg>
+                        <span class = "user-nav__notification">13</span>
+
+                    </div>
+
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="user photo" class = "user-nav__user-photo">
+                        <span class="user-nav__user-name">Imran</span>
+                    </div>
+                </nav>
+
+
+
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    Side-bar
+                </nav>
+                <main class="hotel-view">
+                    Main content
+                </main>
+            </div>
+
+        </div>
+
+    </body>
+</html>

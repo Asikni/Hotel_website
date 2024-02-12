@@ -1,0 +1,108 @@
+.logo{
+    height:9rem;
+}
+
+.search{
+    flex : 0 0 40%;   //taking 40% of the evtire space
+
+    display:flex; //parent element of search bar
+    align-items: center;
+    justify-content: center;
+
+    &__input{
+        font-family: inherit;   //of the header or container component
+        font-size:inherit;
+        color:inherit;
+        background-color: var(--Grey-light-2);
+        border: None;
+        padding: 2rem 2rem;
+        border-radius: 200px;
+        width: 90%;    //90% of that 40%
+        transition: all .2s;
+        margin-right: -3.5rem;
+
+        &:focus{  //Select and style an input field when it gets focus..when we click it
+            outline: none;
+            width:100%;
+            background-color: var(--Grey-light-3);
+        }
+
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color:var(--Grey-dark-1);
+            
+
+        }
+    }
+
+    &__input:focus + &__button{  //when we focus, the background color of the button
+        background-color: var(--Grey-light-3);
+    }
+
+    &__button{
+        border: none;
+        background-color: var(--Grey-light-2);
+
+        &:focus{    
+            outline:none;
+        }
+        &:active{
+            transform:translateY(2px);
+        }
+
+    }
+    &__icon{
+        height:2rem;
+        width: 2rem;
+        fill: var(--Grey-dark-3);
+    }
+}
+
+.user-nav{
+    
+    align-self: stretch;  //we have all items aligned at the center at the header section...
+    //but we want these ones to be stretched.
+    display: flex;
+    align-items: center;
+
+    & > * {  //all direct children of nav
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display:flex;
+        align-items: center;
+}
+    
+
+    & > *:hover{
+        background-color: var(--Grey-light-2);
+        }
+    &__icon-box{}
+
+    &_icon{
+        height:2.25rem;
+        width:2.25rem;
+        fill: var(--Grey-dark-2); 
+        
+    }
+    &__notification{
+        font-size: .8rem;
+        height: .75;
+        width: .75rem;
+        border-radius: 50%;
+        background-color: var(--color-Primary) ;
+    }
+    &__user{
+
+    }
+    &__user-photo{
+        height: 1.75rem;
+        border-radius: 50%;
+
+    }
+
+    &_user-name{}
+    
+
+
+}
